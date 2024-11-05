@@ -4,9 +4,9 @@ Here's the updated `README.md` content:
 
 ---
 
-# Procedural Galaxy Explorer
+# Procedural Game Development
 
-Welcome to **Procedural Galaxy Explorer**! This repository is a journey through procedural generation, culminating in a procedurally generated space exploration game where each solar system is generated from a unique seed. Along the way, we’ll build and showcase projects focused on procedural techniques and game mechanics.
+Welcome to **Procedural Game Development**! This repository is a journey through procedural generation, culminating in a procedurally generated space exploration game where each solar system is generated from a unique seed. Along the way, we’ll build and showcase projects focused on procedural techniques and game mechanics.
 
 ## Overview
 
