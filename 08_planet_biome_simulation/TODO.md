@@ -1,5 +1,5 @@
 # TODO
 
-[ ] Enhance biome diversity.
-[ ] Add procedural weather systems.
-[ ] Integrate resource generation.
+- [ ] Enhance biome diversity.
+- [ ] Add procedural weather systems.
+- [ ] Integrate resource generation.
