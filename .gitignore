@@ -1,0 +1,14 @@
+# Fichiers temporaires
+*.tmp
+*.log
+
+# Dossiers de build
+build/
+dist/
+
+# Fichiers spécifiques à l'IDE
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
