@@ -1,9 +1,3 @@
-Certainly! I've updated the `README.md` to include links to the local `README.md` and `TODO.md` files for each project. This will allow anyone viewing your repository to easily navigate to the detailed documentation and task lists for each project.
-
-Here's the updated `README.md` content:
-
----
-
 # Procedural Game Development
 
 Welcome to **Procedural Game Development**! This repository is a journey through procedural generation, culminating in a procedurally generated space exploration game where each solar system is generated from a unique seed. Along the way, we’ll build and showcase projects focused on procedural techniques and game mechanics.
@@ -306,6 +300,102 @@ To start exploring the projects, clone the repository and follow instructions in
 git clone https://github.com/ernivnai/Procedural-Game-Development-Journey.git
 cd Procedural-Game-Development-Journey
 ```
+
+## Building the Projects
+
+A global `Makefile` is provided at the root of the repository to compile and run the projects using specified settings such as the compiler and technology (e.g., SFML or SDL2).
+
+### Prerequisites
+
+- **Compiler**: Ensure you have a C++ compiler installed (e.g., `gcc`, `g++`, or `clang`).
+- **Libraries**: Depending on the project, you may need to install additional libraries:
+  - **SFML**: Simple and Fast Multimedia Library.
+  - **SDL2**: Simple DirectMedia Layer.
+
+### Using the Makefile
+
+The Makefile allows you to compile and run each project by specifying the project number, compiler, and technology.
+
+#### Makefile Commands
+
+- **Compile a Project**
+
+  ```bash
+  make PROJECT=<project_number> CC=<compiler> TECH=<technology>
+  ```
+
+  For example, to compile Project 1 using `gcc` and `sfml`:
+
+  ```bash
+  make PROJECT=1 CC=gcc TECH=sfml
+  ```
+
+- **Run a Project**
+
+  ```bash
+  make run PROJECT=<project_number> CC=<compiler> TECH=<technology>
+  ```
+
+  Example:
+
+  ```bash
+  make run PROJECT=1 CC=gcc TECH=sfml
+  ```
+
+- **Clean Build Files**
+
+  ```bash
+  make clean PROJECT=<project_number>
+  ```
+
+  Example:
+
+  ```bash
+  make clean PROJECT=1
+  ```
+
+#### Explanation of Variables
+
+- `PROJECT`: The project number to compile (e.g., `1` for Project 1).
+- `CC`: The compiler to use (e.g., `gcc`, `g++`, `clang`).
+- `TECH`: The technology or library used in the project (`sfml`, `sdl2`, etc.).
+
+### Notes
+
+- **Project Structure**: Each project should follow the specified directory structure, with source code in the `src` folder and assets in the `assets` folder.
+- **Build Output**: The compiled binaries and object files will be placed in the `build` directory within each project folder.
+- **Cross-Platform Compatibility**: The Makefile is designed to work on both Windows and Linux systems.
+- **Dependencies**: Ensure all required libraries are installed and accessible to the compiler.
+
+### Installing Dependencies
+
+#### On Linux
+
+- **SFML**:
+
+  ```bash
+  sudo apt-get install libsfml-dev
+  ```
+
+- **SDL2**:
+
+  ```bash
+  sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev
+  ```
+
+#### On Windows
+
+- **SFML** and **SDL2**: Download and install the libraries from their official websites. You may need to adjust the compiler flags and include/library paths in the Makefile or project configuration.
+
+### Troubleshooting
+
+If you encounter any errors during compilation or execution, ensure that:
+
+- The correct libraries are installed and properly linked.
+- The compiler and technology variables are correctly specified.
+- The project number corresponds to an existing project directory.
+
+For additional assistance, feel free to open an issue on the repository or consult the documentation for the specific libraries and tools used.
 
 ## Contributing
 
