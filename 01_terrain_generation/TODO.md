@@ -1,5 +1,5 @@
 # TODO
 
-- [ ] Add color variation for terrain elevation.
-- [ ] Implement scrolling for infinite terrain.
-- [ ] Optimize noise function for performance.
+- [x] Add color variation for terrain elevation.
+- [x] Implement scrolling for infinite terrain.
+- [x] Optimize noise function for performance.
