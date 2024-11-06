@@ -324,10 +324,10 @@ The Makefile allows you to compile and run each project by specifying the projec
   make PROJECT=<project_number> CC=<compiler> TECH=<technology>
   ```
 
-  For example, to compile Project 1 using `gcc` and `sfml`:
+  For example, to compile Project 1 using `g++` and `sfml`:
 
   ```bash
-  make PROJECT=1 CC=gcc TECH=sfml
+  make PROJECT=1 CC=g++ TECH=sfml
   ```
 
 - **Run a Project**
@@ -339,7 +339,7 @@ The Makefile allows you to compile and run each project by specifying the projec
   Example:
 
   ```bash
-  make run PROJECT=1 CC=gcc TECH=sfml
+  make run PROJECT=1 CC=g++ TECH=sfml
   ```
 
 - **Clean Build Files**
